@@ -64,7 +64,7 @@ div#lightboxed--content .lightboxed--frame .lightboxed--caption {
     background: #000;
     background: rgba(0,0,0,0.6);
     color: #fff!important;
-    overflow: scroll;
+    overflow-x: auto;
     max-height: 30%;
 }
 

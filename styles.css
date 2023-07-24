@@ -160,3 +160,40 @@ h1{
     left: 0;
     top: 0;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+@media screen and (max-width: 425px) {
+  ::-webkit-scrollbar {
+    width: 25px; /* Set the width to 25px for screens with a maximum width of 425px */
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
