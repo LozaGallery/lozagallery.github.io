@@ -5,11 +5,12 @@ var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
   layoutMode: 'masonry',
   masonry: {
-    columnWidth: 110
+    columnWidth: 20,
+  fitWidth: true
   },
   cellsByRow: {
     columnWidth: 220,
-    rowHeight: 220
+  rowHeight: 220
   },
   masonryHorizontal: {
     rowHeight: 110
@@ -56,7 +57,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 /* Active links class */
 
 $(document).ready(function() {
-  $('a').each(function() {
+  $('nav a').each(function() {
     var fileName = window.location.href.split('/').pop();
     if ($(this).attr('href') === fileName) {
       $(this).addClass('current');

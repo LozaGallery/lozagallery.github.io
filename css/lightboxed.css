@@ -66,6 +66,8 @@ div#lightboxed--content .lightboxed--frame .lightboxed--caption {
     color: #fff!important;
     overflow-x: auto;
     max-height: 30%;
+    font-size: 25px;
+    width: 80%;
 }
 
 div#lightboxed--thumbs {
@@ -178,6 +180,11 @@ div#lightboxed--bttn_prev {
 }
 
 div#lightboxed--content img:hover + .lightboxed--caption{
+    opacity: 1; /* On hover, change the opacity to 1 (fully opaque) */
+
+}
+
+.lightboxed--caption:hover{
     opacity: 1; /* On hover, change the opacity to 1 (fully opaque) */
 
 }
